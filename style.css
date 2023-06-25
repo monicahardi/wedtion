@@ -15,7 +15,7 @@ body{
 /* START Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .landingpage{
-        overflow:scroll;
+        overflow:hidden;
         background-image: url(mult_image/6.jpg);
         background-size: cover;    
         background-position: center;
