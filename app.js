@@ -10,24 +10,72 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 const hiddenElement = document.querySelectorAll('.hidden');
-const hiddenElement0 = document.querySelectorAll('.main-gambar');
-const hiddenElement1 = document.querySelectorAll('.l-u');
-const hiddenElement2 = document.querySelectorAll('.l-d');
-const hiddenElement3 = document.querySelectorAll('.r-u');
-const hiddenElement4 = document.querySelectorAll('.r-d');
-const hiddenElementimg3 = document.querySelectorAll('.img3');
-const hiddenElementbg1 = document.querySelectorAll('.bg1');
-const hiddenElementline1 = document.querySelectorAll('.line1');
-const hiddenElementintroduce = document.querySelectorAll('.introduce');
-const hiddenElementintro = document.querySelectorAll('.intro');
-const hiddenElementpf = document.querySelectorAll('.pro-female');
-const hiddenElementpm = document.querySelectorAll('.pro-male');
-const hiddenElementpff = document.querySelectorAll('.prof');
-const hiddenElementpmm = document.querySelectorAll('.prom');
-const hiddenElementnamef = document.querySelectorAll('.namef');
-const hiddenElementnamem = document.querySelectorAll('.namem');
+const hiddenElement0 = document.querySelectorAll('.main-image');
+hiddenElement.forEach((el) => observer.observe(el));
+hiddenElement0.forEach((el) => observer.observe(el));   
 
 
+
+
+
+// start profile
+const hidden_pF = document.querySelectorAll('.profile-female');
+const hidden_pM = document.querySelectorAll('.profile-male');
+const hidden_pFI = document.querySelectorAll('.profile-female-image');
+const hidden_pMI = document.querySelectorAll('.profile-male-image');
+const hidden_pFS = document.querySelectorAll('.profile-female-span');
+const hidden_pMS = document.querySelectorAll('.profile-male-span');
+const hidden_pFH1 = document.querySelectorAll('.profile-female-h1');
+const hidden_pMH1 = document.querySelectorAll('.profile-male-h1');
+hidden_pF.forEach((el) => observer.observe(el));
+hidden_pM.forEach((el) => observer.observe(el));
+hidden_pFI.forEach((el) => observer.observe(el));
+hidden_pFS.forEach((el) => observer.observe(el));
+hidden_pMS.forEach((el) => observer.observe(el));
+hidden_pMI.forEach((el) => observer.observe(el));
+hidden_pFH1.forEach((el) => observer.observe(el));
+hidden_pMH1.forEach((el) => observer.observe(el));
+// end profile
+
+
+
+
+
+
+
+
+
+
+
+
+// start ayat
+const hidden_alu = document.querySelectorAll('.ayat-lu');
+const hidden_ald = document.querySelectorAll('.ayat-ld');
+const hidden_aru = document.querySelectorAll('.ayat-ru');
+const hidden_ard = document.querySelectorAll('.ayat-rd');
+const hidden_aTP = document.querySelectorAll('.ayat-teks-p');
+hidden_alu.forEach((el) => observer.observe(el));
+hidden_ald.forEach((el) => observer.observe(el));
+hidden_aru.forEach((el) => observer.observe(el));
+hidden_ard.forEach((el) => observer.observe(el));
+hidden_aTP.forEach((el) => observer.observe(el));
+// end ayat
+
+// start image
+const hiddeniBG1 = document.querySelectorAll('.image-bg1');
+const hiddeniIMG3 = document.querySelectorAll('.image-img3');
+const hiddeniL1 = document.querySelectorAll('.image-line1');
+hiddeniBG1.forEach((el) => observer.observe(el));
+hiddeniIMG3.forEach((el) => observer.observe(el));
+hiddeniL1.forEach((el) => observer.observe(el));
+// end image
+
+// start introduce
+const hiddenmI = document.querySelectorAll('.main-introduce');
+hiddenmI.forEach((el) => observer.observe(el));
+// end introduce
+
+// start invitation
 const hidden_iS    = document.querySelectorAll('.invitation-salam');
 const hidden_iSBg  = document.querySelectorAll('.invitation-section-bg');
 const hidden_iSMP  = document.querySelectorAll('.invitation-section-main-p');
@@ -36,8 +84,9 @@ hidden_iS.forEach((el)      => observer.observe(el));
 hidden_iSBg.forEach((el)    => observer.observe(el));
 hidden_iSMP.forEach((el)    => observer.observe(el));
 hidden_iSMH3.forEach((el)   => observer.observe(el));
+// end invitation
 
-
+// start countdown
 const hidden_c = document.querySelectorAll('.countdown');
 const hidden_cdot_lu = document.querySelectorAll('.countdown-dot-lu');
 const hidden_cdot_ld = document.querySelectorAll('.countdown-dot-ld');
@@ -48,27 +97,7 @@ hidden_cdot_lu.forEach((el)      => observer.observe(el));
 hidden_cdot_ld.forEach((el)      => observer.observe(el));
 hidden_cdot_ru.forEach((el)      => observer.observe(el));
 hidden_cdot_rd.forEach((el)      => observer.observe(el));
-
-hiddenElement.forEach((el) => observer.observe(el));
-hiddenElement0.forEach((el) => observer.observe(el));
-hiddenElement1.forEach((el) => observer.observe(el));
-hiddenElement2.forEach((el) => observer.observe(el));
-hiddenElement3.forEach((el) => observer.observe(el));
-hiddenElement4.forEach((el) => observer.observe(el));
-hiddenElementimg3.forEach((el) => observer.observe(el));
-hiddenElementline1.forEach((el) => observer.observe(el));
-hiddenElementbg1.forEach((el) => observer.observe(el));
-hiddenElementintroduce.forEach((el) => observer.observe(el));
-hiddenElementintro.forEach((el) => observer.observe(el));
-hiddenElementpf.forEach((el) => observer.observe(el));
-hiddenElementpm.forEach((el) => observer.observe(el));
-hiddenElementpff.forEach((el) => observer.observe(el));
-hiddenElementpmm.forEach((el) => observer.observe(el));
-
-hiddenElementnamef.forEach((el) => observer.observe(el));
-hiddenElementnamem.forEach((el) => observer.observe(el));
-
-
+// end countdown
 
 
 var countdownDate = new Date("Sep 17, 2027 00:00:00").getTime();
